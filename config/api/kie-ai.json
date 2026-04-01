@@ -1,0 +1,53 @@
+{
+  "base_url": "https://api.kie.ai",
+  "auth": "Bearer $KIE_API_KEY",
+  "create_task": "POST /api/v1/jobs/createTask",
+  "get_task": "GET /api/v1/jobs/recordInfo?taskId={taskId}",
+  "poll_interval_seconds": 5,
+  "max_poll_attempts": 60,
+  "task_states": {
+    "waiting": "Queued",
+    "queuing": "In queue",
+    "generating": "Processing",
+    "success": "Done — resultUrls available",
+    "fail": "Failed — check failMsg"
+  },
+  "models": {
+    "image": {
+      "model_id": "nano-banana-2",
+      "env_var": "KIE_MODEL_IMAGE",
+      "use_for": "Keyframe generation (static images)",
+      "input": {
+        "prompt": "string (max 20000 chars)",
+        "aspect_ratio": "9:16",
+        "resolution": "1K",
+        "output_format": "png"
+      }
+    },
+    "video": {
+      "model_id": "kling-2.6/image-to-video",
+      "env_var": "KIE_MODEL_VIDEO",
+      "use_for": "Scene video clips from approved keyframes",
+      "input": {
+        "prompt": "string (max 1000 chars) — scene action + character description",
+        "image_urls": ["URL of approved keyframe image (max 1)"],
+        "sound": true,
+        "duration": "5 or 10 seconds"
+      },
+      "notes": [
+        "image_urls takes the approved keyframe as input — this is how identity is preserved",
+        "sound=true enables avatar speech generation",
+        "duration: use 5 for most scenes, 10 for emotional/cinematic scenes",
+        "prompt should describe motion + speech, NOT re-describe the character (keyframe handles that)"
+      ]
+    }
+  },
+  "result_format": {
+    "success_response": {
+      "data": {
+        "resultJson": "{\"resultUrls\":[\"https://...generated-content-url\"]}"
+      }
+    },
+    "note": "resultJson is a JSON string that must be parsed. resultUrls contains download URLs."
+  }
+}
