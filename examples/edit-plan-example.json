@@ -1,0 +1,100 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "id": "scene_01",
+      "type": "video",
+      "src": "clips/scene_01.mp4",
+      "durationFrames": 120,
+      "transition": "cut",
+      "transitionDuration": 0,
+      "subtitle": {
+        "words": [
+          {"text": "I", "startMs": 0, "endMs": 150},
+          {"text": "almost", "startMs": 150, "endMs": 450},
+          {"text": "didn't", "startMs": 450, "endMs": 700},
+          {"text": "go", "startMs": 700, "endMs": 900},
+          {"text": "to", "startMs": 900, "endMs": 1050},
+          {"text": "Barcelona.", "startMs": 1050, "endMs": 1600}
+        ]
+      }
+    },
+    {
+      "id": "scene_02",
+      "type": "video",
+      "src": "clips/scene_02.mp4",
+      "durationFrames": 180,
+      "transition": "fade",
+      "transitionDuration": 15,
+      "subtitle": {
+        "words": [
+          {"text": "I", "startMs": 0, "endMs": 100},
+          {"text": "was", "startMs": 100, "endMs": 250},
+          {"text": "scrolling", "startMs": 250, "endMs": 600},
+          {"text": "on", "startMs": 600, "endMs": 750},
+          {"text": "a", "startMs": 750, "endMs": 850},
+          {"text": "random", "startMs": 850, "endMs": 1200},
+          {"text": "Tuesday", "startMs": 1200, "endMs": 1700},
+          {"text": "and", "startMs": 1700, "endMs": 1900},
+          {"text": "found", "startMs": 1900, "endMs": 2200},
+          {"text": "a", "startMs": 2200, "endMs": 2300},
+          {"text": "$47", "startMs": 2300, "endMs": 2800},
+          {"text": "flight.", "startMs": 2800, "endMs": 3200}
+        ]
+      }
+    },
+    {
+      "id": "scene_03_insert",
+      "type": "website_insert",
+      "src": "assets/website/US/search_results.mp4",
+      "overlay": "assets/website/US/phone_frame.png",
+      "durationFrames": 120,
+      "transition": "fade",
+      "transitionDuration": 15,
+      "subtitle": {
+        "words": [
+          {"text": "Just", "startMs": 0, "endMs": 200},
+          {"text": "look", "startMs": 200, "endMs": 450},
+          {"text": "at", "startMs": 450, "endMs": 550},
+          {"text": "these", "startMs": 550, "endMs": 800},
+          {"text": "prices.", "startMs": 800, "endMs": 1300}
+        ]
+      }
+    },
+    {
+      "id": "scene_04",
+      "type": "video",
+      "src": "clips/scene_04.mp4",
+      "durationFrames": 150,
+      "transition": "fade",
+      "transitionDuration": 15,
+      "subtitle": {
+        "words": [
+          {"text": "Best", "startMs": 0, "endMs": 250},
+          {"text": "decision", "startMs": 250, "endMs": 650},
+          {"text": "I", "startMs": 650, "endMs": 750},
+          {"text": "ever", "startMs": 750, "endMs": 1050},
+          {"text": "made.", "startMs": 1050, "endMs": 1500}
+        ]
+      }
+    }
+  ],
+  "music": {
+    "src": "music/emotional_warm_01.mp3",
+    "volume": 0.12,
+    "duckUnderVoice": true,
+    "duckVolume": 0.04,
+    "fadeInFrames": 30,
+    "fadeOutFrames": 45
+  },
+  "subtitleStyle": {
+    "fontFamily": "Montserrat",
+    "fontSize": 58,
+    "color": "#FFFFFF",
+    "highlightColor": "#FF3B30",
+    "position": "bottom",
+    "backgroundColor": "rgba(0,0,0,0.6)"
+  }
+}

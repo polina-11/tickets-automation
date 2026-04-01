@@ -1,0 +1,39 @@
+{
+  "market_code": "US",
+  "language": "en-US",
+  "country_name": "United States",
+  "website_domain": "tickets.com",
+  "currency": "USD",
+  "visual_style": "Clean, aspirational, cinematic. Mix of warm and cool tones.",
+  "avatar_types": ["American woman 22-30", "American man 24-32", "diverse ethnicities"],
+  "cultural_tone": "Direct but authentic. Americans value personal stories and 'life hack' framing. Casual, confident, slightly self-deprecating humor works.",
+  "travel_angles": [
+    "Hidden cheap flights to Europe",
+    "Weekend getaway deals",
+    "Solo travel stories",
+    "I found a flight for $XX",
+    "Travel hack nobody talks about",
+    "Bucket list trip on a budget"
+  ],
+  "popular_routes": [
+    "JFK-PAR (New York to Paris)",
+    "LAX-TYO (LA to Tokyo)",
+    "ORD-LHR (Chicago to London)",
+    "MIA-CUN (Miami to Cancun)",
+    "SFO-BCN (San Francisco to Barcelona)"
+  ],
+  "hooks_that_work": [
+    "I almost didn't go...",
+    "Nobody told me you could...",
+    "I found a $XX flight and literally screamed",
+    "This is the travel hack airlines hate",
+    "POV: you find a flight for under $..."
+  ],
+  "soft_sell_style": "Mention TICKETS as the tool that made the discovery possible — 'I was scrolling TICKETS on a Tuesday' or 'checked TICKETS just to see'. Never hard sell.",
+  "localization_constraints": [
+    "Prices in USD ($)",
+    "Reference US airports (JFK, LAX, ORD, MIA, SFO, ATL)",
+    "Use miles/fahrenheit mindset",
+    "TSA/travel experience references are relatable"
+  ]
+}

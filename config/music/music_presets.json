@@ -1,0 +1,26 @@
+{
+  "presets": [
+    {
+      "id": "emotional_warm",
+      "mood": "Warm, hopeful, cinematic",
+      "use_for": ["storyteller", "confession", "diary"],
+      "volume": 0.12,
+      "duck_volume": 0.04
+    },
+    {
+      "id": "upbeat_travel",
+      "mood": "Energetic, positive, adventurous",
+      "use_for": ["pov", "hack", "discovery"],
+      "volume": 0.15,
+      "duck_volume": 0.05
+    },
+    {
+      "id": "nostalgic_soft",
+      "mood": "Reflective, gentle, bittersweet",
+      "use_for": ["regret", "missed_chance", "memory"],
+      "volume": 0.10,
+      "duck_volume": 0.03
+    }
+  ],
+  "notes": "Music files stored in Google Drive /TICKETS Videos/music/. Add file paths here once uploaded."
+}

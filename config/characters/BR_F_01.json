@@ -1,0 +1,45 @@
+{
+  "character_id": "BR_F_01",
+  "market": "BR",
+  "gender": "female",
+  "age_range": "24-28",
+  "ethnicity_or_visual_type": "Brazilian, mixed-race (parda), warm skin tone",
+  "face_description": "Oval face, warm brown eyes with slight almond shape, full natural eyebrows, small rounded nose, full lips, high cheekbones, natural beauty with minimal makeup look",
+  "hair_description": "Dark brown wavy hair, shoulder length, natural texture, sometimes tucked behind one ear",
+  "body_type": "Slim-average, natural proportions",
+  "voice_type": "Warm, bright, slightly breathy when excited",
+  "speaking_energy": "medium",
+  "emotional_baseline": "Warm, approachable, genuine curiosity",
+  "wardrobe_range": "Casual-chic: oversized tees, light dresses, denim jacket, crop tops with high-waist pants. No formal wear.",
+  "default_camera_behavior": "Speaks to camera like talking to a close friend. Occasional look-aways when remembering something. Natural hand gestures.",
+  "realism_rules": "Must look like a real person filmed on a phone. No studio lighting. Natural skin texture with minor imperfections. Real-looking environments.",
+  "forbidden_deviations": [
+    "Face shape change",
+    "Eye color change",
+    "Nose shape change",
+    "Skin tone change",
+    "Age shift more than 2 years",
+    "Ethnicity change",
+    "Adding glasses or piercings not in original",
+    "Dramatic weight change"
+  ],
+  "locked": {
+    "face_shape": "Oval with soft jawline",
+    "eye_structure": "Warm brown, slight almond shape, natural lashes",
+    "nose": "Small, rounded tip, narrow bridge",
+    "mouth": "Full lips, natural pink tone, warm smile",
+    "ethnicity": "Brazilian mixed-race (parda)",
+    "age_band": "24-28",
+    "identity_anchor": "Young Brazilian woman, warm brown eyes, oval face, full lips, dark wavy shoulder-length hair, warm golden-brown skin tone, natural beauty"
+  },
+  "flexible": [
+    "outfit",
+    "background/location",
+    "pose",
+    "emotion/expression",
+    "lighting conditions",
+    "camera angle",
+    "hair styling (up/down/tucked, but same hair)"
+  ],
+  "reference_images": []
+}

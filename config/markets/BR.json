@@ -1,0 +1,38 @@
+{
+  "market_code": "BR",
+  "language": "pt-BR",
+  "country_name": "Brazil",
+  "website_domain": "tickets.com",
+  "currency": "BRL",
+  "visual_style": "Warm, vibrant, high energy, tropical color palette",
+  "avatar_types": ["Brazilian woman 22-30", "Brazilian man 24-32", "mixed ethnicity"],
+  "cultural_tone": "Warm, expressive, personal. Brazilians connect through emotion and storytelling. Use informal language (voce, not senhor). Dream-big energy.",
+  "travel_angles": [
+    "First international trip",
+    "Dream European destination",
+    "Cheap flights from Sao Paulo/Rio",
+    "Beach vs city escapes",
+    "Study abroad deals",
+    "Visiting family abroad"
+  ],
+  "popular_routes": [
+    "GRU-LIS (Sao Paulo to Lisbon)",
+    "GIG-MIA (Rio to Miami)",
+    "GRU-CDG (Sao Paulo to Paris)",
+    "GRU-ORL (Sao Paulo to Orlando)",
+    "GRU-BUE (Sao Paulo to Buenos Aires)"
+  ],
+  "hooks_that_work": [
+    "Eu quase nao fui... (I almost didn't go...)",
+    "Ninguem me contou que... (Nobody told me that...)",
+    "Achei passagem por R$... (I found a ticket for R$...)",
+    "Isso mudou minha vida... (This changed my life...)"
+  ],
+  "soft_sell_style": "Mention TICKETS as 'where I found the deal' — like telling a friend. Never say 'download' or 'use our platform'. Say 'eu achei no TICKETS' (I found it on TICKETS).",
+  "localization_constraints": [
+    "Never use Portugal Portuguese — use Brazilian Portuguese",
+    "Prices in BRL (R$)",
+    "Reference Brazilian airports (GRU, GIG, BSB, CNF)",
+    "Avoid cold/winter imagery unless it's a European destination dream"
+  ]
+}

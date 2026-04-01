@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scene",
+  "type": "object",
+  "required": ["scene_id", "order", "character_id", "action", "spoken_text"],
+  "properties": {
+    "scene_id": { "type": "string" },
+    "video_job_id": { "type": "string" },
+    "order": { "type": "integer", "minimum": 1 },
+    "duration_seconds": { "type": "number", "minimum": 2, "maximum": 15 },
+    "character_id": { "type": "string" },
+    "emotion": { "type": "string", "description": "Primary emotion: excited, nostalgic, surprised, calm, dreamy, determined" },
+    "location": { "type": "string", "description": "Where the scene takes place" },
+    "wardrobe_state": { "type": "string", "description": "What the character wears" },
+    "camera_framing": { "type": "string", "enum": ["close-up", "medium", "wide", "over-shoulder", "pov"] },
+    "action": { "type": "string", "description": "What happens in this scene" },
+    "spoken_text": { "type": "string", "description": "What the avatar says" },
+    "subtitle_text": { "type": "string", "description": "Text displayed as subtitle (may differ from spoken)" },
+    "product_insert": { "type": "boolean", "default": false },
+    "website_insert_type": { "type": "string", "enum": ["none", "search", "compare", "price_alert", "route", "screenshot"], "default": "none" },
+    "website_insert_asset": { "type": "string", "description": "Path to website asset file" },
+    "transition": { "type": "string", "enum": ["cut", "fade", "slide", "wipe"], "default": "fade" },
+    "continuity_notes": { "type": "string", "description": "What must carry over from previous scene" },
+    "keyframe_prompt": { "type": "string" },
+    "kling_prompt": { "type": "string" },
+    "keyframe_path": { "type": "string" },
+    "clip_path": { "type": "string" },
+    "qc_status": { "type": "string", "enum": ["pending", "approved", "rejected", "regenerating"], "default": "pending" }
+  }
+}

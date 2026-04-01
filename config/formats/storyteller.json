@@ -1,0 +1,26 @@
+{
+  "format_id": "storyteller",
+  "name": "Emotional AI Travel Storyteller",
+  "description": "Avatar tells a personal travel story with emotional arc and soft product mention",
+  "duration_range": [30, 45],
+  "scene_count": [5, 8],
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "default_characters_per_video": 1,
+  "structure": {
+    "hook": "2-4 seconds, close-up, emotional opening",
+    "body": "20-30 seconds, story unfolds across 3-5 scenes",
+    "product_moment": "3-5 seconds, website insert at natural discovery point",
+    "close": "4-6 seconds, emotional payoff or soft CTA"
+  },
+  "rules": {
+    "max_website_inserts": 2,
+    "avatar_must_speak": true,
+    "music_required": true,
+    "subtitles_required": true,
+    "identity_continuity": "strict"
+  },
+  "tone": "Authentic, personal, emotional. Feels like a friend sharing a story, not a brand ad.",
+  "camera_variety": ["close-up", "medium", "wide"],
+  "min_camera_changes": 3
+}

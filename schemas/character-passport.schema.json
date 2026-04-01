@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Character Passport",
+  "type": "object",
+  "required": ["character_id", "market", "gender", "age_range", "face_description"],
+  "properties": {
+    "character_id": { "type": "string", "description": "Unique ID: BR_F_01, US_M_02, etc." },
+    "market": { "type": "string" },
+    "gender": { "type": "string", "enum": ["female", "male"] },
+    "age_range": { "type": "string", "description": "e.g. 22-28" },
+    "ethnicity_or_visual_type": { "type": "string" },
+    "face_description": { "type": "string", "description": "Detailed face description for identity lock" },
+    "hair_description": { "type": "string" },
+    "body_type": { "type": "string" },
+    "voice_type": { "type": "string", "description": "Warm, energetic, calm, husky, bright" },
+    "speaking_energy": { "type": "string", "enum": ["low", "medium", "high"] },
+    "emotional_baseline": { "type": "string", "description": "Default emotional state" },
+    "wardrobe_range": { "type": "string", "description": "Acceptable clothing styles" },
+    "default_camera_behavior": { "type": "string" },
+    "realism_rules": { "type": "string" },
+    "forbidden_deviations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What must NEVER change between scenes"
+    },
+    "locked": {
+      "type": "object",
+      "description": "Identity-locked attributes",
+      "properties": {
+        "face_shape": { "type": "string" },
+        "eye_structure": { "type": "string" },
+        "nose": { "type": "string" },
+        "mouth": { "type": "string" },
+        "ethnicity": { "type": "string" },
+        "age_band": { "type": "string" },
+        "identity_anchor": { "type": "string", "description": "One-line identity summary for all prompts" }
+      }
+    },
+    "flexible": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What CAN change: outfit, background, pose, emotion, lighting, camera"
+    },
+    "reference_images": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Paths to reference images in Google Drive"
+    }
+  }
+}

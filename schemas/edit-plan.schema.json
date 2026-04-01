@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Edit Plan",
+  "description": "Complete instructions for Remotion to render the final video",
+  "type": "object",
+  "required": ["fps", "width", "height", "scenes"],
+  "properties": {
+    "fps": { "type": "integer", "default": 30 },
+    "width": { "type": "integer", "default": 1080 },
+    "height": { "type": "integer", "default": 1920 },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "src", "durationFrames"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["video", "website_insert", "image"] },
+          "src": { "type": "string", "description": "Path to video clip or image" },
+          "overlay": { "type": "string", "description": "Optional overlay (phone frame, etc.)" },
+          "durationFrames": { "type": "integer" },
+          "transition": { "type": "string", "enum": ["cut", "fade", "slide", "wipe"], "default": "fade" },
+          "transitionDuration": { "type": "integer", "default": 15, "description": "Frames" },
+          "subtitle": {
+            "type": "object",
+            "properties": {
+              "words": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": { "type": "string" },
+                    "startMs": { "type": "integer" },
+                    "endMs": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "voiceover": {
+      "type": "object",
+      "description": "Not needed if Kling clips have voice baked in",
+      "properties": {
+        "src": { "type": "string" },
+        "volume": { "type": "number", "default": 1.0 }
+      }
+    },
+    "music": {
+      "type": "object",
+      "properties": {
+        "src": { "type": "string" },
+        "volume": { "type": "number", "default": 0.12 },
+        "duckUnderVoice": { "type": "boolean", "default": true },
+        "duckVolume": { "type": "number", "default": 0.05 },
+        "fadeInFrames": { "type": "integer", "default": 30 },
+        "fadeOutFrames": { "type": "integer", "default": 45 }
+      }
+    },
+    "subtitleStyle": {
+      "type": "object",
+      "properties": {
+        "fontFamily": { "type": "string", "default": "Montserrat" },
+        "fontSize": { "type": "integer", "default": 58 },
+        "color": { "type": "string", "default": "#FFFFFF" },
+        "highlightColor": { "type": "string", "default": "#FF3B30" },
+        "position": { "type": "string", "enum": ["top", "center", "bottom"], "default": "bottom" },
+        "backgroundColor": { "type": "string", "default": "rgba(0,0,0,0.6)" }
+      }
+    }
+  }
+}

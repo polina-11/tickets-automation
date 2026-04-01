@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Market Preset",
+  "type": "object",
+  "required": ["market_code", "language", "country_name"],
+  "properties": {
+    "market_code": { "type": "string" },
+    "language": { "type": "string" },
+    "country_name": { "type": "string" },
+    "website_domain": { "type": "string", "description": "tickets.se, tickets.com, etc." },
+    "currency": { "type": "string" },
+    "visual_style": { "type": "string", "description": "Warm, minimalist, vibrant, etc." },
+    "avatar_types": { "type": "array", "items": { "type": "string" }, "description": "Preferred avatar looks" },
+    "cultural_tone": { "type": "string", "description": "How to speak to this audience" },
+    "travel_angles": { "type": "array", "items": { "type": "string" }, "description": "What travel topics resonate" },
+    "popular_routes": { "type": "array", "items": { "type": "string" } },
+    "hooks_that_work": { "type": "array", "items": { "type": "string" }, "description": "Proven hook styles" },
+    "soft_sell_style": { "type": "string", "description": "How to mention TICKETS naturally" },
+    "localization_constraints": { "type": "array", "items": { "type": "string" }, "description": "Things to avoid" }
+  }
+}

@@ -1,0 +1,32 @@
+# Media files (stored in Google Drive, not GitHub)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.aac
+
+# Large image batches
+keyframes/
+clips/
+final/
+
+# Jobs (runtime data)
+jobs/
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+*.env.local
+
+# Keep website insert assets (small, versioned)
+!assets/website/**/*.png
+!assets/website/**/*.jpg
+!assets/website/**/*.mp4

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video Job",
+  "type": "object",
+  "required": ["id", "market", "language", "format", "status"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique job ID, e.g. job_001" },
+    "market": { "type": "string", "description": "Market code: BR, US, SE, PH, AR, ID, IN, ES" },
+    "language": { "type": "string", "description": "Language code: pt-BR, en-US, sv-SE, etc." },
+    "platform": { "type": "string", "enum": ["tiktok", "reels", "both"], "default": "both" },
+    "format": { "type": "string", "description": "Content format: storyteller, pov, confession, etc." },
+    "character_id": { "type": "string", "description": "Character Passport ID: BR_F_01, US_M_01, etc." },
+    "product_visibility": { "type": "string", "enum": ["none", "soft", "medium", "direct"], "default": "soft" },
+    "status": {
+      "type": "string",
+      "enum": [
+        "created",
+        "ideas_generated", "idea_selected",
+        "script_generated", "script_approved",
+        "storyboard_generated", "storyboard_approved",
+        "keyframes_generated", "keyframes_approved",
+        "clips_generated", "clips_approved",
+        "edit_plan_ready",
+        "rendering", "rendered",
+        "final_review",
+        "approved", "rejected", "archived"
+      ]
+    },
+    "idea": { "type": "object", "description": "Selected idea" },
+    "script": { "type": "string", "description": "Approved script text" },
+    "storyboard": { "type": "array", "items": { "$ref": "scene.schema.json" } },
+    "edit_plan_path": { "type": "string", "description": "Path to edit_plan.json" },
+    "final_video_path": { "type": "string", "description": "Path to final rendered MP4" },
+    "google_drive_folder": { "type": "string", "description": "Google Drive folder URL for this job" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  }
+}
