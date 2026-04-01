@@ -29,6 +29,14 @@ Return this exact structure:
 }
 ```
 
+## Character Continuity (MANDATORY)
+The Character Passport is provided in the input. You MUST write the script for this specific character:
+- Write in a voice that matches their speaking_energy and emotional_baseline
+- The story must be believable for this character's age, ethnicity, and visual type
+- Every scene you suggest must be playable by ONE person — the character in the passport
+- Do NOT write scenes that require the character to look different (e.g. "years later as an old woman")
+- Do NOT introduce other speaking characters unless explicitly requested
+
 ## Script Rules
 1. HOOK: First sentence must create curiosity or emotion immediately
 2. STORY: Must have a beginning, tension/shift, and resolution
@@ -37,6 +45,7 @@ Return this exact structure:
 5. VOICE: Write how people actually talk, not how brands write
 6. EMOTION: Every sentence should serve the emotional arc
 7. ENDING: End with either a soft CTA or an emotional payoff (not both)
+8. CHARACTER: Every line must be speakable by the same single avatar
 
 ## Bad Examples (do NOT write like this)
 - "TICKETS is the best platform for finding cheap flights"

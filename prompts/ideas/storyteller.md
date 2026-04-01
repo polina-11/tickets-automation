@@ -38,9 +38,18 @@ Return exactly this JSON structure for each idea:
 ]
 ```
 
+## Character Awareness
+If a Character Passport is provided ({{character_id}}), every idea must be:
+- Believable for this specific character (age, ethnicity, visual type)
+- Playable by ONE person across all scenes
+- Written with their emotional_baseline in mind
+
+If no passport is provided, write ideas that work for a single generic avatar matching the market's avatar_types.
+
 ## Rules
 - Every idea must have an emotional core (not just information)
 - The hook must work without sound (visual + text)
 - TICKETS mention must feel organic, never forced
 - Stories should be relatable to the target market
 - Think TikTok-native: authentic, personal, not corporate
+- One video = one avatar (never suggest ideas requiring multiple characters)

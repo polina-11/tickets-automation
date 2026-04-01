@@ -9,6 +9,15 @@ You are a Storyboard Agent. Break the script into structured scenes.
 - Market: {{market}}
 - Website insert assets available: {{available_inserts}}
 
+## Character Continuity (MANDATORY)
+The Character Passport is provided in the input. Every scene MUST reference the same character_id.
+- Every scene gets `character_id` from the passport
+- Wardrobe must stay within the passport's `wardrobe_range`
+- Emotions must be believable for the passport's `emotional_baseline`
+- No scene may introduce a second person unless explicitly requested
+- `continuity_notes` must specify what carries over from the previous scene (wardrobe, location, emotional state)
+- If location changes, wardrobe change is allowed ONLY within the passport's `wardrobe_range`
+
 ## Output Format
 Return an array of scenes:
 
@@ -18,6 +27,7 @@ Return an array of scenes:
     "scene_id": "scene_01",
     "order": 1,
     "duration_seconds": 5,
+    "character_id": "{{character_passport.character_id}}",
     "emotion": "curious",
     "location": "apartment, morning light",
     "wardrobe_state": "casual hoodie",
@@ -27,7 +37,7 @@ Return an array of scenes:
     "product_insert": false,
     "website_insert_type": "none",
     "transition": "cut",
-    "continuity_notes": "Opening scene, establish character identity"
+    "continuity_notes": "Opening scene, establish character identity. Same person throughout."
   }
 ]
 ```
