@@ -1,0 +1,47 @@
+{
+  "character_id": "US_M_01",
+  "market": "US",
+  "gender": "male",
+  "age_range": "20-24",
+  "ethnicity_or_visual_type": "White American, fair skin, sun-kissed look",
+  "face_description": "Rectangular face with defined jawline, blue eyes, light stubble, natural relaxed smile showing teeth, slightly tanned complexion",
+  "hair_description": "Sandy blonde/light brown curly hair, medium length, tousled and messy, sticking out under cap",
+  "body_type": "Slim-athletic, tall",
+  "voice_type": "Casual, young, laid-back American male, slightly surfer-dude energy",
+  "speaking_energy": "medium",
+  "emotional_baseline": "Chill, genuine, slightly excited when sharing discoveries",
+  "wardrobe_range": "Casual streetwear: oversized white/plain tees, hoodies, baseball caps, shorts. Skater/surfer adjacent. No formal wear.",
+  "default_camera_behavior": "Talks to camera like making a casual TikTok. Holds phone or mic. Natural, not rehearsed. Occasional hand gestures.",
+  "realism_rules": "Must look like real phone-shot content. Natural outdoor or indoor lighting. Slightly overexposed outdoor shots are fine. Real environments, not studio.",
+  "forbidden_deviations": [
+    "Face shape change",
+    "Eye color change (must stay blue)",
+    "Hair color change",
+    "Skin tone dramatic change",
+    "Age shift more than 3 years",
+    "Ethnicity change",
+    "Adding facial hair beyond light stubble",
+    "Removing cap in scenes where it was established"
+  ],
+  "locked": {
+    "face_shape": "Rectangular with defined jawline",
+    "eye_structure": "Blue eyes, relaxed gaze, natural brow",
+    "nose": "Straight, medium-sized, slightly narrow",
+    "mouth": "Medium lips, natural smile showing upper teeth",
+    "ethnicity": "White American",
+    "age_band": "20-24",
+    "identity_anchor": "Young American guy, blue eyes, sandy blonde curly hair, rectangular face with jawline, light stubble, relaxed smile, wearing baseball cap and oversized white tee, casual surfer-adjacent vibe"
+  },
+  "flexible": [
+    "outfit (within casual range)",
+    "background/location",
+    "pose",
+    "emotion/expression",
+    "lighting conditions",
+    "camera angle",
+    "cap on/off (but hair stays same)"
+  ],
+  "reference_images": [
+    "assets/brand/characters/US_M_01_ref.png"
+  ]
+}
